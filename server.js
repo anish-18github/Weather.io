@@ -1,20 +1,3 @@
-// import express from "express";
-
-// const app = express();
-// const port = 3000;
-
-// // Serve everything inside src (index.html, assets, favicon, etc.)
-// app.use(express.static("src"));
-
-// // Default route (optional, express.static already serves index.html)
-// app.get("/", (req, res) => {
-//     res.sendFile("index.html", { root: "src" });
-// });
-
-// app.listen(port, () => {
-//     console.log(`🚀 Server running at http://localhost:${port}`);
-// });
-
 const express = require('express');
 const path = require('path');
 const app = express();
