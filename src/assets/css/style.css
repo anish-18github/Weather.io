@@ -837,7 +837,25 @@ article.container::before {
   #ERROR SECTION
 \*-----------------------------------*/
 
+.error-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  /* For Mobile browser */
+  background-color: var(--background);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 8;
+}
 
+.error-content .btn-primary {
+  margin-block-start: 20px;
+}
 
 
 
@@ -845,3 +863,25 @@ article.container::before {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/* 
+ * Responsive for large than 768px screen
+*/
+
+@media (min-width: 768px) {
+  /* 
+   * REUSED STYLE
+  */
+
+  .container {
+    padding: 24px;
+  }
+
+  .title-1 {
+    --title-1: 2.4rem;
+  }
+
+  .section>.title-2 {
+    margin-block-end: 16px;
+  }
+}
