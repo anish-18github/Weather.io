@@ -1,6 +1,6 @@
 /**
  * @license MIT
- * @fileoverview Menage all routes
- * @copyright codewithsadee 2023 All rights reserved
- * @author codewithsadee <mohammadsadee24@gmail.com>
+ * @fileoverview All module function
+ * @copyright codegg 2023 All rights reserved
+ * @author codegg <codegg401@gmail.com>
  */
