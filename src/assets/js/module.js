@@ -75,3 +75,37 @@ export const getHours = function (timeUnix, timezone) {
 
     return `${hours % 12 || 12} ${period}`;
 }
+
+/**
+ * 
+ * @param {number} mps Meter per second
+ * @returns {number} Kilometer per hours
+ */
+export const mps_to_kmh = mps => {
+    const mph = mps * 3600;
+    return mph / 1000;
+}
+
+
+export const aqiText = {
+    1: {
+        level: "Good",
+        mesasge: "Air quality is considered satisfactory, and air pollution poses little or no risk."
+    },
+    2: {
+        level: "Fair",
+        mesasge: "Air quality is acceptable; however, for some pollutants there may be a moderate health consern for a very small number of people who are unusually sensitive to air pollution."
+    },
+    3: {
+        level: "Moderate",
+        mesasge: "Member of sensitive groups may experince health affects. The general public is not likely to be affected."
+    },
+    4: {
+        level: "Poor",
+        mesasge: "Everyone may begin to experience health effects; member of sensitive groups may experience more serious health effects."
+    },
+    5: {
+        level: "Very Poor",
+        mesasge: "Health warning of emergency xonditions. The entire population is more likely to be affected."
+    }
+}

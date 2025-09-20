@@ -816,7 +816,6 @@ article.container::before {
   width: 100%;
   height: 100%;
   background-color: var(--background);
-  /* display: grid; */
   place-items: center;
   z-index: 1;
   display: none;
