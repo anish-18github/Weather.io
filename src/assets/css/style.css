@@ -365,6 +365,19 @@ body {
   font-size: var(--label-2);
 }
 
+.fade-in {
+  animation: fade-in 250ms ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 
 
@@ -478,7 +491,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.search-wrapper > .m-icon {
+.search-wrapper>.m-icon {
   display: none;
 }
 
@@ -579,7 +592,7 @@ article.container::before {
   margin-inline: auto;
 }
 
-.current-weather-card > .body-3 {
+.current-weather-card>.body-3 {
   text-transform: capitalize;
 }
 
@@ -631,7 +644,7 @@ article.container::before {
   font-weight: var(--weight-semiBold);
 }
 
-.forecast-card .card-item > .label-1 {
+.forecast-card .card-item>.label-1 {
   width: 100%;
   text-align: right;
 }
@@ -881,7 +894,7 @@ article.container::before {
     --title-1: 2.4rem;
   }
 
-  .section > .title-2 {
+  .section>.title-2 {
     margin-block-end: 16px;
   }
 
@@ -993,6 +1006,8 @@ article.container::before {
   .hourly-forecast .card-sm {
     padding: 16px;
   }
+
+
 }
 
 
@@ -1181,7 +1196,5 @@ article.container::before {
   .highlight-list {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
 }
-
-
