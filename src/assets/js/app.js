@@ -111,7 +111,7 @@ const errorContent = document.querySelector("[data-error-content]");
  */
 export const updateWeather = function (lat, lon) {
     // loading.style.display = "grid";
-    container.style.overflowY = "hidden";
+    // container.style.overflowY = "hidden";
     // container.classList.remove("fade-in");
     errorContent.style.display = "none";
 
@@ -217,25 +217,25 @@ export const updateWeather = function (lat, lon) {
                                 <ul class="card-list">
 
                                     <li class="card-item">
-                                        <p class="title-1">${Number(pm2_5).toPrecision(3)}</p>
+                                        <p class="title-1">${pm2_5.toPrecision(3)}</p>
 
                                         <p class="label-1">PM<sub>2.5</sub></p>
                                     </li>
 
                                 <li class="card-item">
-                                        <p class="title-1">${Number(so2).toPrecision(3)}</p>
+                                        <p class="title-1">${so2.toPrecision(3)}</p>
 
                                         <p class="label-1">SO<sub>2</sub></p>
                                     </li>
 
                                     <li class="card-item">
-                                        <p class="title-1">${Number(no2).toPrecision(3)}</p>
+                                        <p class="title-1">${no2.toPrecision(3)}</p>
 
                                         <p class="label-1">NO<sub>2</sub></p>
                                     </li>
 
                                     <li class="card-item">
-                                        <p class="title-1">${Number(o3).toPrecision(3)}</p>
+                                        <p class="title-1">${o3.toPrecision(3)}</p>
 
                                         <p class="label-1">O<sub>3</sub></p>
                                     </li>
@@ -332,8 +332,9 @@ export const updateWeather = function (lat, lon) {
                     </div>
             `;
 
+            highlightSection.appendChild(card);
 
-            
+
         });
 
     });
