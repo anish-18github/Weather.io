@@ -14,17 +14,17 @@ import { updateWeather, error404 } from "./app.js";
 
 
 
-const defaultLocation = "#/weather?lat=51.5073219&lon=0.1276474" //london
 
 const currentLocation = function () {
     window.navigator.geolocation.getCurrentPosition(res => {
         const { latitude, longitude } = res.coords;
-
-        updateWeather(`lat=${latitude}, lon=${longitude}`);
+        
+        updateWeather(`lat=${latitude}`, `lon=${longitude}`);
     }, err => {
-        window.location.hash = defaultLocation;
+        window.location.hash = currentLocation();
     });
 }
+ 
 
 /**
  * @param {string} query Searched query
